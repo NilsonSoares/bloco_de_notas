@@ -1,16 +1,26 @@
-# bloco_de_notas
+# BLOCO DE NOTAS
 
-A new Flutter project.
+Projeto desenvolvido durante o curso de Flutter pela Raro Academy, com o objetivo de criar a tela de visualização de notas e lembretes utilizando Flutter.
 
-## Getting Started
+![image](https://user-images.githubusercontent.com/19718447/126098405-edd1b93e-d456-4e3c-bd95-125d212325e4.png)
 
-This project is a starting point for a Flutter application.
+## Tecnologias Utilizadas
 
-A few resources to get you started if this is your first Flutter project:
+* Flutter
+* Dart
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+## Conceitos Aplicados
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+* StatefullWidget
+* MaterialApp
+* Container
+* Expanded
+* Stack
+* Animations
+* LinearGradient
+* Gridview
+* componentização de widgets
+
+## Referências
+
+[Documentação do Flutter](https://flutter.dev/docs)
