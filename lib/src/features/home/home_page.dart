@@ -1,7 +1,6 @@
 import 'dart:ui';
 
 import 'package:bloco_de_notas/src/features/new_note/new_note.dart';
-import 'package:bloco_de_notas/src/shared/constants/app_colors.dart';
 import 'package:bloco_de_notas/src/shared/constants/text_styles.dart';
 import 'package:bloco_de_notas/src/shared/widgets/custom_fab_widget.dart';
 import 'package:flutter/material.dart';

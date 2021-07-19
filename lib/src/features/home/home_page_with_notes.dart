@@ -1,6 +1,8 @@
 import 'package:bloco_de_notas/src/features/new_note/new_note.dart';
 import 'package:bloco_de_notas/src/shared/constants/app_colors.dart';
 import 'package:bloco_de_notas/src/shared/constants/text_styles.dart';
+import 'package:bloco_de_notas/src/shared/models/note_model.dart';
+import 'package:bloco_de_notas/src/shared/widgets/card_note_widget.dart';
 import 'package:bloco_de_notas/src/shared/widgets/custom_fab_widget.dart';
 import 'package:flutter/material.dart';
 
@@ -15,6 +17,9 @@ class HomePageWithNotes extends StatefulWidget {
 }
 
 class _HomePageWithNotesState extends State<HomePageWithNotes> {
+
+  final List<NoteModel> notes = NoteModel.getNotes();
+  
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -53,7 +58,16 @@ class _HomePageWithNotesState extends State<HomePageWithNotes> {
             Expanded(
               child: Padding(
                 padding: EdgeInsets.all(16),
-                child: Staggere,
+                child: StaggeredGridView.countBuilder(
+                  crossAxisCount: 4,
+                  crossAxisSpacing: 16,
+                  mainAxisSpacing: 16,
+                  itemCount: notes.length,
+                  itemBuilder: (BuildContext context, int index) => CardNote(
+                    note: notes[index],
+                  ),
+                  staggeredTileBuilder: (int index) => new StaggeredTile.fit(2),
+                ),
               )
             )
           ], 

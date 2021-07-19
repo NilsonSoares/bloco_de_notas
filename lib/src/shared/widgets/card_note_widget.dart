@@ -51,7 +51,7 @@ class CardNote extends StatelessWidget {
                   children: [
                     if (note.noteDate != null)
                       CardIcon(icon: Icons.date_range),
-                    if (note.hasAttachmement != null)
+                    if (note.hasAttachment != null)
                       CardIcon(icon: Icons.attach_file_outlined),
                     if (note.isFavorite != null)
                       CardIcon(icon: Icons.favorite),
