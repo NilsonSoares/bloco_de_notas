@@ -61,7 +61,7 @@ class CardNote extends StatelessWidget {
               Padding(
                 padding: EdgeInsets.all(8),
                 child: Text(
-                  note.noteTitle,
+                  note.noteDescription,
                   style: TextStyles.black14w400Roboto,
                 ),
               ),
