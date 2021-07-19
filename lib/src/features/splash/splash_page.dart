@@ -1,5 +1,6 @@
 import 'package:animated_card/animated_card.dart';
 import 'package:bloco_de_notas/src/features/home/home_page.dart';
+import 'package:bloco_de_notas/src/features/home/home_page_with_notes.dart';
 import 'package:bloco_de_notas/src/shared/constants/app_colors.dart';
 import 'package:bloco_de_notas/src/shared/constants/text_styles.dart';
 import 'package:flutter/cupertino.dart';
@@ -19,7 +20,7 @@ class _SplashPageState extends State<SplashPage> {
       Future.delayed(Duration(seconds: 2)).then(
         (value) => Navigator.of(context).push(
           CupertinoPageRoute(
-            builder: (BuildContext context) => HomePage(),
+            builder: (BuildContext context) => HomePageWithNotes(),
           ),
         ),
       );
